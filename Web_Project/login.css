@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.child-div{
+    margin-top: 50px;
+    height: 80vh;
+    width: 80vw;
+    border: maroon 3px solid;
+    border-radius: 5px;
+}
+
+.login-img{
+    height: auto;
+    width: 100%;
+}
+
+.form-container{
+    height: 79.4vh;
+    width: 100%;
+}
+
+.form-container label{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-container input[type=text], input[type=password]{
+    width: 250px;
+    border: none;
+    border-bottom: 3px solid maroon;
+    padding-left: 8px;
+    border-color: maroon;
+    height: 30px;
+}
+
+.form-container input[type=submit]{
+    width: 250px;
+    border: none;
+    border-radius: 16px;
+    background-color: maroon;
+    color: white;
+    font-size: 18px;
+    border-color: maroon;
+    height: 30px;
+}
+
+.form-container input[type=submit]:hover{
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.title{
+    position: relative;
+    bottom: 585px;
+}
+
+.fontz{
+    font-family: 'Smooch', cursive;
+    font-size: 33px;
+}
+.create-one{
+    position: relative;
+    bottom: 50px;
+}
+
+.create-one a{
+    color: maroon;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logimg {
+      display: none;
+    }
+
+    
+  }

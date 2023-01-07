@@ -1,0 +1,32 @@
+.product-container{
+    height: 275px;
+    width: 275px;
+    background-color: black;
+}
+
+.product-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.shop-now{
+    position: relative;
+    bottom: 50px;
+
+}
+
+.shop-now button{
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: auto;
+}
+
+.shop-now button:hover{
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+
+}

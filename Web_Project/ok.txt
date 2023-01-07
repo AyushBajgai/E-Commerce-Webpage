@@ -1,0 +1,13 @@
+if($user){
+            if (Hash::check($request->password, $user->password)){
+
+                $request->session()->put('loggedUser', $user -> id);
+                return redirect('dashboard');
+            }else{
+    
+                return back()->with('fail','Incorrect password!');
+            }
+        }
+        else{
+            return back()->with('fail','Email not registered!');
+        }     

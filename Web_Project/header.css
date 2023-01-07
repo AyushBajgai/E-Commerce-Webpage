@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.background-color{
+    background-color: #f1f1f1;
+    height: 130px;
+    max-width: auto;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.logo-container{
+    width: 100%;
+    height: auto;
+}
+.logo-container img{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Small Device */
+.background-color2{
+    background-color: #f1f1f1;
+    height: 110px;
+    max-width: auto;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.togg{
+    background-color: grey;
+    border-radius: 10px;
+
+}
+
+.bg3{
+    background-color: #f1f1f1;
+}
+
+/* Small Device */
+.background-color3{
+    background-color: #f1f1f1;
+    height: 100px;
+    max-width: auto;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+

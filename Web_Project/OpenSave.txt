@@ -1,0 +1,31 @@
+ //When open is pressed
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openText= new OpenFileDialog();
+            openText.Filter = "Text Files(.txt)|.txt| All Files(.)|*.*";
+            if (openText.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader openStream = new StreamReader(File.OpenRead(openText.FileName));
+                multiLine.Text = openStream.ReadToEnd();
+                openStream.Dispose();
+            }
+        }
+
+
+
+
+
+
+ //When save is pressed
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveText = new SaveFileDialog();
+            saveText.Filter = "Text Files(.txt)|.txt| All Files(.)|*.*";
+            if (saveText.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter saveStream = new StreamWriter(File.Create(saveText.FileName));
+                saveStream.Write(multiLine.Text);
+                saveStream.Dispose();
+                MessageBox.Show("Successfully Saved!!", " ", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+        }

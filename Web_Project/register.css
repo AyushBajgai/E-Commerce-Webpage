@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.child-div{
+    margin-top: 50px;
+    height: 80vh;
+    width: 80vw;
+    border: maroon 3px solid;
+    border-radius: 5px;
+}
+
+.register-form{
+    margin: 0 15px 0 15px;
+}
+.register-form label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.register-form input[type=text], input[type=email],input[type=password]{
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid maroon;
+    border-color: maroon;
+    height: 30px;
+}
+
+.register-form input[type=submit]{
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    background-color: maroon;
+    color: white;
+    font-size: 18px;
+    border-color: maroon;
+    height: 40px;
+}
+
+.register-form input[type=submit]:hover{
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.fontz{
+    font-family: 'Smooch', cursive;
+    font-size: 35px;
+    font-weight: 500;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .child-div{
+
+        height: 105vh;
+
+    }
+  }
